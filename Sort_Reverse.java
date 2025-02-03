@@ -10,7 +10,7 @@ public class Sort_Reverse {
         List<Integer>sortedList =
                 numlist.stream()
                         .sorted(Comparator.reverseOrder())
-                        .collect(Collectors.toUnmodifiableList());
+                        .toList();
 
         System.out.println(sortedList);
     }
